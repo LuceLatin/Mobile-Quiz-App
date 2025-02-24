@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/pitanjeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ovdje će se prikazivati pitanja"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/odgovorAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odgovor A"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/pitanjeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/odgovorBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odgovor B"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/odgovorAButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/odgovorCButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odgovor C"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/odgovorBButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/odgovorDButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odgovor D"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/odgovorCButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/odgovorDButton"
+        android:text="00:00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/odgovorDButton"
+        app:layout_constraintVertical_bias="0.136" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
